@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+body{
+	margin:0;
+	font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+	font-size: 14px;
+
+}
+
+nav
+{
+	font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+}
+
+nav li{
+	float:left;
+	height:50px;
+	width:200px;
+	list-style:none;
+	margin-top:20px;
+	margin-left:30px;
+}
+
+nav li:last-child{
+	max-width: 100%;
+}
+
+.menu-bar{
+	margin:10px auto;
+	width:100%;
+	background-color: #e5e5e5;
+	float:left;
+} /*good to go*/
+
+.main-content li{
+	width:100%;
+	margin-bottom:10px;
+	list-style: none;	
+
+}
+
+.main-content{
+	margin:10px auto;	
+}
+
+
+
+
