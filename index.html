@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="PhotoApp">
+<html>
 
 <head>
 	<title>My first app.</title>
@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!--<link rel="stylesheet" href="css/bootstrap.responsive.min.css">-->
 
-	
 	<script type="text/javascript" src="js/app/app.js"></script>	
 	<script type="text/javascript" src="js/app/photoctrl/photoctrl.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
@@ -20,24 +19,17 @@
 
 </head>
 
-<body>	
+<body ng-app="PhotoApp">
 	
-	<div class ="menu-bar" ng-controller="PhotoCtrl">
-		<nav role ="navigation">
-			<li><a href="#"> About Me </a></li>
-            <li class="dropdown">
-            	<a href="/" data-toggle="dropdown" class="dropdown-toggle"> Portfolio <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Vacation</a></li>
-                    <li><a href="/">Concerts</a></li>
-                    <li><a href="/">Side Projects</a></li>
-                </ul>
-            </li>
-            <li><a href="#"> Contact </a></li>
-		</nav>	
+	<div class ="menu-bar">
+		<header ng-include="'subsection/navbar.html'"></header>
 	</div>
 
 	<div ng-view></div>
+
+	<div class="footer">
+		<footer ng-include="'subsection/foot.html'"></footer>
+	</div>
 
 </body>
 
