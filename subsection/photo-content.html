@@ -3,6 +3,11 @@
 		<li ng-repeat="i in pictures">
 			<a href="#/photos/{{i.id}}"><img width="300" ng-src="{{i.url}}"></a>
 			<a href="#/photos/{{i.id}}">{{i.name}}</a>
+
+			<!--<img width="300" ng-src="{{i.url}}" class="img-responsive" ng-click="expandImg = !expandImg" ></a>
+			<div class ="expand-image">
+				<img ng-src="{{i.url}}" ng-show="expandImg">
+			</div>--><hr/>
 		</li>
 	</ul>
 
