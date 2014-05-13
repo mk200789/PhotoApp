@@ -1,26 +1,22 @@
 [
     {
-        "age": 0, 
-        "id": "motorola-xoom-with-wi-fi", 
+        "id": 1, 
         "url": "img/DSCF0713.jpg", 
-        "name": "Motorola XOOM\u2122 with Wi-Fi"
+        "name": "concert image DSCF0713"
     }, 
     {
-        "age": 1, 
-        "id": "motorola-xoom", 
+        "id": 2, 
         "url": "img/DSCF0711.jpg", 
-        "name": "MOTOROLA XOOM\u2122"
+        "name": "concert image DSCF0711"
     },
         {
-        "age": 0, 
-        "id": "motorola-xoom-with-wi-fi", 
+        "id": 3, 
         "url": "img/DSCF0715.jpg", 
-        "name": "Motorola XOOM\u2122 with Wi-Fi"
+        "name": "concert image DSCF0715"
     }, 
     {
-        "age": 1, 
-        "id": "motorola-xoom", 
+        "id": 4, 
         "url": "img/DSCF0716.jpg", 
-        "name": "MOTOROLA XOOM\u2122"
+        "name": "concert image DSCF0716"
     }
 ]
