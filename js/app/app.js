@@ -11,17 +11,17 @@ app.config(['$routeProvider',
 			when('/photos',{
 				templateUrl: 'subsection/photo-content.html',
 				controller: 'PhotoCtrl'
-			}).
-			when('/photos/:photoId',{
+			}).	
+			when('/photos/:picturesId', {
 				templateUrl: 'subsection/photo-detail.html',
-				controller: 'PhotoDetailCtrl'
+				controller: 'PhotoCtrl' //'PhotoDetailCtrl'
 			}).
 			when('/',{
 				templateUrl: 'subsection/photo-content.html',
 				controller: 'PhotoCtrl'
 			}).
-			when('#',{
-				templateUrl: 'subsection/photo-content.html',
+			when('/contact',{
+				templateUrl: 'subsection/contact.html',
 				controller: 'PhotoCtrl'
 			}).			
 			otherwise({
