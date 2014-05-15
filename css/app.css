@@ -47,18 +47,11 @@ nav li:last-child{
 	margin:10px auto;	
 }
 
-.main-count.expand-image{
-	width:500px;
-	margin-left:30px;
-}
-
 .footer{
 	position: absolute;
 	bottom:30px;	
 	margin-left: 30px;
 	font-size: 10px;
 }
-
-
 
 
