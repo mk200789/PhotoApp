@@ -2,21 +2,25 @@
     {
         "id": 1, 
         "url": "img/DSCF0713.jpg", 
-        "name": "concert image DSCF0713"
+        "name": "concert image DSCF0713",
+        "category": "vacation"
     }, 
     {
         "id": 2, 
         "url": "img/DSCF0711.jpg", 
-        "name": "concert image DSCF0711"
+        "name": "concert image DSCF0711",
+        "category": "sideproject"
     },
         {
         "id": 3, 
         "url": "img/DSCF0715.jpg", 
-        "name": "concert image DSCF0715"
+        "name": "concert image DSCF0715",
+        "category": "sideproject"
     }, 
     {
         "id": 4, 
         "url": "img/DSCF0716.jpg", 
-        "name": "concert image DSCF0716"
+        "name": "concert image DSCF0716",
+        "category": "sideproject"
     }
 ]
