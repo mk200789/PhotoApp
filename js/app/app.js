@@ -20,10 +20,16 @@ app.config(['$routeProvider',
 				templateUrl: 'subsection/photo-content.html',
 				controller: 'PhotoCtrl'
 			}).
+			when('/about',{
+				templateUrl: 'subsection/about.html'
+			}).
 			when('/contact',{
 				templateUrl: 'subsection/contact.html',
 				controller: 'PhotoCtrl'
-			}).			
+			}).
+			when('/testfilter',{
+				templateUrl: 'subsection/testfilter.html'
+			}).
 			otherwise({
 				redirectTo:'/photos'
 			});
