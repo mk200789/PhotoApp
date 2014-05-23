@@ -1,15 +1,9 @@
-<div class="main-content">
-	<ul>
-		<li ng-repeat="i in pictures">
-			<a class="fancybox-buttons" data-fancybox-group="button" href="{{i.url}}"><img width="300" ng-src="{{i.url}}" ></a>
-			<a href="#/photos/{{i.id}}">{{i.name}}</a>
+<li ng-repeat="i in pictures | isCategory: passVal" ng-if="!searchResult">
+	<a class="fancybox-buttons" data-fancybox-group="button" href="{{i.url}}"><img width="300" ng-src="{{i.url}}" ></a>
+	<a ng-href="#/photos/{{i.id}}">{{i.name}}</a>
+</li>
 
-			<!--<img width="300" ng-src="{{i.url}}" class="img-responsive" ng-click="expandImg = !expandImg" ></a>
-			<div class ="expand-image">
-				<img ng-src="{{i.url}}" ng-show="expandImg" ng-click="expandImg = !expandImg">-->
-			</div>
-			<hr/>
-		</li>
-	</ul>
 
-</div>
+<li ng-repeat="i in pictures | filter: searchResult" ng-if="searchResult">
+	<a class="fancybox-buttons" data-fancybox-group="button" href="{{i.url}}"><img width="300" ng-src="{{i.url}}" ></a>
+</li>
