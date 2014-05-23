@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body{
-	margin:0;
+	margin:14px;
 	font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
 	font-size: 14px;
 
@@ -15,7 +15,7 @@ nav
 nav li{
 	float:left;
 	height:50px;
-	width:300px;
+	width:200px;
 	list-style:none;
 	margin-top:20px;
 	margin-left:60px;
@@ -27,7 +27,7 @@ nav li:last-child{
 }
 
 .menu-bar{
-	margin:10px auto;
+	margin:14px auto;
 	width:100%;
 	background-color: #e5e5e5;
 	float:left;
@@ -55,3 +55,24 @@ nav li:last-child{
 }
 
 
+select{
+	border-style: none;
+    background-color:#e5e5e5;	
+}
+.selecton{
+	display: inline-block;
+	position: relative;
+
+
+}
+.selecton:after{
+    content:'';
+    position:absolute;
+    right:-3em;
+    top:0;
+    width:60px;
+    height:100%;
+    z-index:10;
+    background-color:#e5e5e5;
+
+}
