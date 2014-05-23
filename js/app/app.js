@@ -14,11 +14,7 @@ app.config(['$routeProvider',
 			}).	
 			when('/photos/:picturesId', {
 				templateUrl: 'subsection/photo-detail.html',
-				controller: 'PhotoCtrl' //'PhotoDetailCtrl'
-			}).
-			when('/',{
-				templateUrl: 'subsection/photo-content.html',
-				controller: 'PhotoCtrl'
+				controller: 'PhotoCtrl' 
 			}).
 			when('/about',{
 				templateUrl: 'subsection/about.html'
@@ -27,10 +23,7 @@ app.config(['$routeProvider',
 				templateUrl: 'subsection/contact.html',
 				controller: 'PhotoCtrl'
 			}).
-			when('/testfilter',{
-				templateUrl: 'subsection/testfilter.html'
-			}).
 			otherwise({
-				redirectTo:'/photos'
+				redirectTo:'/photos',
 			});
 	}]);
