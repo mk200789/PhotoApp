@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/app.css">	
 	
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<!--<link rel="stylesheet" href="css/bootstrap.responsive.min.css">-->
+
 
 	<script type="text/javascript" src="js/app/app.js"></script>	
 	<script type="text/javascript" src="js/app/photoctrl/photoctrl.js"></script>
@@ -24,16 +24,20 @@
 
 </head>
 
-<body ng-app="PhotoApp">
+<body>
 	
-	<div class ="menu-bar">
-		<header ng-include="'subsection/navbar.html'"></header>
-	</div>
+	<div class="home" ng-app="PhotoApp" ng-controller="PhotoCtrl"ng-init="init()" >
+		<div class ="menu-bar" >
+			<header ng-include="'subsection/navbar.html'"></header>
+		</div>
 
-	<div ng-view></div>
-
-	<div class="footer">
-		<footer ng-include="'subsection/foot.html'"></footer>
+		<div class="main-content">
+			<div ng-view></div>							
+		</div>
+		
+		<div class="footer">	
+			<footer ng-include="'subsection/foot.html'"></footer>
+		</div>
 	</div>
 
 </body>
