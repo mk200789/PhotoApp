@@ -5,6 +5,8 @@ var app = angular.module('PhotoAppControllers', []);
 /*Controllers*/
 
 app.controller("PhotoCtrl", function($scope, $http, $routeParams, $location) {
+	
+	$scope.HolderValue = "Search...";
 
 	//keeps track of whether if something is submitted or entered
 	$scope.isSubmit = false;
@@ -13,6 +15,8 @@ app.controller("PhotoCtrl", function($scope, $http, $routeParams, $location) {
 	$scope.availableCategory= [];
 
 	$scope.catFilter = null;
+
+	$scope.picturesId= $routeParams.picturesId;
 
 	$scope.init = function(){
 		$http.get('js/photo.json').success(function(data){
@@ -35,6 +39,7 @@ app.controller("PhotoCtrl", function($scope, $http, $routeParams, $location) {
 			});
 		});
 
+
 		$scope.keepTrac = function(input)
 		{
 			$scope.tell = $scope.pictures[input-1].url;
@@ -47,9 +52,9 @@ app.controller("PhotoCtrl", function($scope, $http, $routeParams, $location) {
 
 		$scope.go = function(input)
 		{
-			console.log(input);
+			//console.log(input);
+			$scope.searchResult = $scope.HolderValue;
 			$location.path(input);
-
 		};
 
 
@@ -57,33 +62,32 @@ app.controller("PhotoCtrl", function($scope, $http, $routeParams, $location) {
 	/* END OF FILTERING CATEGORIES*/	
 
 
-	$scope.picturesId= $routeParams.picturesId;
-
 
 	$scope.search = function(input){
 		//check if something is submitted
 		if($scope.isSubmit){
-			$scope.searchResult=null;
 			//check if submitted is not blank/empty
 			if(input){
 				$scope.searchResult = input;
 				console.log($scope.searchResult);
 			}
 			//reset isSubmit to false
-
 			$scope.isSubmit= false;
 		}
 	};	
 
 	$scope.submit = function(){
-			$scope.isSubmit = true;
+		$scope.searchResult=null;
+		$scope.isSubmit = true;
 	};
+
+
 });
 
 
 app.filter('isCategory',  function() {
     return function(input, category) {
-       // console.log("input" + input);
+        //console.log(category);
         if (typeof category == 'undefined' || category == null) {
             return input;
         } else {
