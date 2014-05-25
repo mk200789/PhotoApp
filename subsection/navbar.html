@@ -4,7 +4,7 @@
     <!--end test-->
     <li>
         <div class="selecton">
-            <select ng-model="catFilter" ng-options="category for category in availableCategory" ng-class="grab(catFilter)" ng-click="go('#/{{picturesId}}')">
+            <select ng-model="catFilter" ng-options="category for category in availableCategory" ng-class="grab(catFilter)" ng-click="go('#/photos')">
             <option value="">All</option>
         </select>
         </div>
@@ -13,7 +13,7 @@
 
     <li>
         <form ng-submit="submit()">
-            <input type="text" ng-model="searchValue" name="text" ng-class="search(searchValue)"/>
+            <input type="text" ng-model="searchValue" name="text" ng-class="search(searchValue)" placeholder={{HolderValue}}>
         </form>
     </li>
 </nav>
