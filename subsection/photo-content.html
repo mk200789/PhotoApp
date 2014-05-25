@@ -3,7 +3,14 @@
 	<a ng-href="#/photos/{{i.id}}">{{i.name}}</a>
 </li>
 
-
 <li ng-repeat="i in pictures | filter: searchResult" ng-if="searchResult">
 	<a class="fancybox-buttons" data-fancybox-group="button" href="{{i.url}}"><img width="300" ng-src="{{i.url}}" ></a>
 </li>
+
+
+
+<div ng-if="searchResult == HolderValue">
+	<li ng-repeat="i in pictures | isCategory: passVal">
+		<a class="fancybox-buttons" data-fancybox-group="button" href="{{i.url}}"><img width="300" ng-src="{{i.url}}" ></a>
+	</li>
+</div>
