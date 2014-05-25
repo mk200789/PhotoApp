@@ -76,3 +76,27 @@ select{
     background-color:#e5e5e5;
 
 }
+
+.side_bar{
+	width:250px;
+	padding: 10px;
+	float:left;
+	position:relative;
+	height:100%;
+	background-color: #e5e5e5;
+
+}
+
+.side_bar li{
+	margin:0px;
+	height:26px;
+
+}
+
+.about_content{
+	padding: 10px;
+	float: left;
+	position: relative;
+	width: auto;
+
+}
